@@ -23,7 +23,7 @@ public class PracticaConstantes {
             reversedText += text.charAt(i);
         }
         System.out.println(text.equals(reversedText));
-        System.out.println("Text ~ " + text);
-        System.out.println("Text ~ " + reversedText);
+        System.out.println("Original text ~ " + text);
+        System.out.println("Reversed text ~ " + reversedText);
     }
 }
