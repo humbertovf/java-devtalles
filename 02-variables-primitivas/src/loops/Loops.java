@@ -17,7 +17,8 @@ public class Loops {
         System.out.println("Is palindrome? " + isPalindrome);
 
         System.out.println("Printing 2s");
-        for (int i = 2; i <= 10; i += 2) {
+        final int MAX_COUNT = 10;
+        for (int i = 2; i <= MAX_COUNT; i += 2) {
             System.out.println("Number: " + i);
         }
 
