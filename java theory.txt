@@ -1,0 +1,16 @@
+JAVA
+
+Java is typed
+
+Variables = memory space that hold a vlue, this value can change with time
+
+Two types of variables:
+primitive (only one value)
+byte, short, int, long
+float, double
+char
+boolean
+
+
+reference (objects)
+
