@@ -2,15 +2,15 @@ package HouseExample;
 
 public class HouseMain {
     public static void main(String[] args) {
-        House myHouse = new House();
-        myHouse.doors = 2;
-        myHouse.windows = 4;
-        myHouse.size = 10;
+        House myHouse = new House(2, 4, 10);
+//        myHouse.doors = 2;
+//        myHouse.windows = 4;
+//        myHouse.size = 10;
 
-        House house2 = new House();
-        house2.doors = 4;
-        house2.windows = 6;
-        house2.size = 20;
+        House house2 = new House(4, 6, 20);
+//        house2.doors = 4;
+//        house2.windows = 6;
+//        house2.size = 20;
 
         System.out.println("La cantidad de puertas de la casa es: " + house2.doors);
         house2.openDoor();
