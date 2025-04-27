@@ -2,7 +2,7 @@ package HouseExample;
 
 public class HouseMain {
     public static void main(String[] args) {
-        House myHouse = new House(2, 4, 10);
+        House myHouse = new House();
         myHouse.setDoors(3);
         myHouse.setWindows(4);
         myHouse.setSize(10);
