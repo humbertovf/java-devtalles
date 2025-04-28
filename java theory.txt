@@ -112,3 +112,12 @@ public final class House {
         return size;
     }
 }
+
+===== Anonynous class =====
+nameless class declared and initialized in one line, instantiating abstract class
+
+
+====== ENUM ======
+
+
+
