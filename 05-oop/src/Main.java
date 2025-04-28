@@ -2,10 +2,16 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Vehicle vehicle = new Vehicle("Fiat", "Duna", 2000);
+//        Vehicle vehicle = new Vehicle("Fiat", "Duna", 2000);
+//
+//        vehicle.setYear(2001);
+//
+//        System.out.println(vehicle.toString());
 
-        vehicle.setYear(2001);
+        Car myCar = new Car("Toyota", "Hilux", 2025, 4);
+        Motorcycle motorcycle = new Motorcycle("Honda", "CBR", 2021, false);
 
-        System.out.println(vehicle.toString());
+        myCar.start();
+        motorcycle.start();
     }
 }

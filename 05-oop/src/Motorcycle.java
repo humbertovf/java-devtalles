@@ -7,16 +7,12 @@ public class Motorcycle extends Vehicle {
     }
 
     public void popWheelie() {
-        System.out.println("Motocycle is doing a willy.");
+        System.out.println("Motorcycle is doing a willy.");
     }
 
-
-    public boolean isHasSidecar() {
-        return hasSidecar;
-    }
-
-    public void setHasSidecar(boolean hasSidecar) {
-        this.hasSidecar = hasSidecar;
+    @Override
+    public void start() {
+        System.out.println("The Motorcycle has been started.");
     }
 
     @Override
