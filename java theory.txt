@@ -14,3 +14,63 @@ boolean
 
 reference (objects)
 
+OOP
+
+//Access modifiers
+
+public -> accesible from everywhere (packages, classes, subclasses)
+protected -> accessible only from the package and subclasses
+default -> accesible only from same package
+private -> accesible from same class only
+
+getter and setters
+
+
+//Class Wrappers:
+
+int -> Integer
+double -> Double
+boolean ->Boolean
+char -> Char
+byte -> Byte
+short -> Short
+long -> Long
+float -> Float
+
+Integer
+.paseInt() -> from String to Integer
+.toString() -> from Integer to String
+.compare() -> returns -1 when firstNumber < secondNumber, 1 when firstNumber > secondNumber
+.max()
+.min()
+
+
+Wrapper Character
+boolean isLetter = Character.isLetter('A'); // true
+boolean isDigit = Character.isDigit('5'); // true
+boolean isWhiteSpace = Character.isWhiteSpace(' '); // true
+
+Wrapper Boolean
+boolean result = Boolean.logalAnd(true, false); // false
+result = Boolean.logalOr(true, false); // true
+
+Variable context = SCOPE
+
+local variables -> live in specific context (methods), exist during the method execution only
+class variables -> statics, exists  during all the execution
+instance variables -> protected, these exist while the instance is in memory
+
+String class
+===> String are immutables <===
+Pool String
+
+String name = "Gabriel";
+String name2 = "Matias";
+
+name == name2 // false, the validation is about the same memory location
+
+String name = "Gabriel";
+String name2 = "Gabriel";
+
+name == name2 // true, even tho the validation is about memmory location since both are same string they both are saved in something called Pool String
+
