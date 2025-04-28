@@ -12,5 +12,8 @@ public class Main {
         counter2.showCount();
         counter3.showCount();
         counter4.showCount();
+
+        int result = MathUtils.square(5);
+        System.out.println("result = " + result);
     }
 }
