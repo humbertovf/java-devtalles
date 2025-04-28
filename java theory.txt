@@ -74,3 +74,41 @@ String name2 = "Gabriel";
 
 name == name2 // true, even tho the validation is about memmory location since both are same string they both are saved in something called Pool String
 
+Static
+
+// Applies to attributes, methods and blocks of code
+static pertenecen a una clase en particular y su valor es unico para todas las instancias de la clase
+
+//Static blocks alway are executed even before main method
+
+
+===== Immutability for Classes ======
+Once the instance is create, its state cannot change, all attributes remain constant during the live of the instance
+class and its attributes must be final
+initialize attributes thru constructor
+only create getters access modifiers
+this kind of clases could not be inheritered
+
+public final class House {
+    private final int doors;
+    private final int windows;
+    private final double size;
+
+    public House(int doors, int windows, double size) {
+        this.doors = doors;
+        this.windows = windows;
+        this.size = size;
+    }
+
+    public int getDoors() {
+        return doors;
+    }
+
+    public int getWindows() {
+        return windows;
+    }
+
+    public double getSize() {
+        return size;
+    }
+}
