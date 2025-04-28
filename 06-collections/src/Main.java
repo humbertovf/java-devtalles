@@ -5,24 +5,35 @@ import java.util.Arrays;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Integer[] numbers = {1, 2, 3, 4, 5};
-        System.out.println(numbers[0]);
-        System.out.println(Arrays.toString(numbers));
+        int[] primitiveNumbers = new int[5];
+        primitiveNumbers[0] = 10;
+        primitiveNumbers[1] = 20;
 
-        numbers[0] = 100;
-        System.out.println(numbers[0]);
-        System.out.println(Arrays.toString(numbers));
+        int[] newNumbers = new int[primitiveNumbers.length + 1];
+        System.arraycopy(primitiveNumbers, 0, newNumbers, 0, primitiveNumbers.length);
+        newNumbers[5] = 500;
 
-        int[] fixedArray = new int[100];
-        System.out.println("Array length ~ " + fixedArray.length);
-        System.out.println(Arrays.toString(fixedArray));
 
-        //Dynamic
-        ArrayList<Integer> numbers2 = new ArrayList<>();
-        numbers2.add(1);
-        numbers2.add(10);
-        numbers2.add(100);
+        Integer[] wrapperNumbers = new Integer[5];
+        wrapperNumbers[0] = 30;
+        wrapperNumbers[1] = 40;
 
-        System.out.println("Printing numbers2 -> " + numbers2);
+        System.out.println("Primitive numbers: " + Arrays.toString(primitiveNumbers));
+        System.out.println("Wrapper numbers: " + Arrays.toString(wrapperNumbers));
+
+        System.out.println("Tipo int");
+        for (int number : primitiveNumbers) {
+            System.out.println(number);
+        }
+
+        System.out.println("Tipo Integer");
+        for (Integer number : wrapperNumbers) {
+            System.out.println(number);
+        }
+
+        System.out.println("Looping new numbers fixed array");
+        for (int number : newNumbers) {
+            System.out.println(number);
+        }
     }
 }
