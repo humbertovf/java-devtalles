@@ -10,18 +10,21 @@ public class Main {
 
         Vehicle myCar = new Car("Toyota", "Hilux", 2025, 4);
         Vehicle motorcycle = new Motorcycle("Honda", "CBR", 2021, false);
+        Vehicle bicycle = new Bicycle("Nimbus", "2000", 1995, true);
 
         // Esto se logra porque ambas clases: Car/Motorcycle heredan de la clase padre Vehicle
 
-        myCar.start();
-        motorcycle.start();
+        ((Car) myCar).start();
+        ((Motorcycle) motorcycle).start();
 
         printVehicle(motorcycle);
         printVehicle(myCar);
 
         // Se ocupa castear porque si no, no se puede setear la cantidad de puertas ya que no aparecen.
-        ((Car)myCar).setDoors(5);
+        ((Car) myCar).setDoors(5);
         printVehicle(myCar);
+
+        printVehicle(bicycle);
 
     }
 
