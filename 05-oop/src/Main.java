@@ -8,10 +8,24 @@ public class Main {
 //
 //        System.out.println(vehicle.toString());
 
-        Car myCar = new Car("Toyota", "Hilux", 2025, 4);
-        Motorcycle motorcycle = new Motorcycle("Honda", "CBR", 2021, false);
+        Vehicle myCar = new Car("Toyota", "Hilux", 2025, 4);
+        Vehicle motorcycle = new Motorcycle("Honda", "CBR", 2021, false);
+
+        // Esto se logra porque ambas clases: Car/Motorcycle heredan de la clase padre Vehicle
 
         myCar.start();
         motorcycle.start();
+
+        printVehicle(motorcycle);
+        printVehicle(myCar);
+
+        // Se ocupa castear porque si no, no se puede setear la cantidad de puertas ya que no aparecen.
+        ((Car)myCar).setDoors(5);
+        printVehicle(myCar);
+
+    }
+
+    public static void printVehicle(Vehicle vehicle) {
+        System.out.println(vehicle.toString());
     }
 }
